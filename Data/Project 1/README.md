@@ -1,4 +1,4 @@
-#Goals
+# Goals
 This kernel hopes to accomplish many goals, to name a few...
 
 * Learn/review/explain complex data science topics through write-ups.
