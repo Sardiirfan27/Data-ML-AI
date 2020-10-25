@@ -12,4 +12,4 @@ Materi yang dipelajari:
 # Submission
 * mengenali bentuk tangan yang membentuk gunting, batu, atau kertas.
 
-Course Dicoding: https://www.dicoding.com/academies/184
+Courses Dicoding: https://www.dicoding.com/academies/184
