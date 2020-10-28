@@ -1,7 +1,7 @@
 # Machine Learning
 
 ## Project/Submission
-* mengenali bentuk tangan yang membentuk gunting, batu, atau kertas.
+mengenali bentuk tangan yang membentuk gunting, batu, atau kertas.
 
 Materi yang dipelajari:
 * Data Introduction : Pengenalan terhadap data dan bagaimana mempersiapkannya untuk diproses dengan machine learning.
