@@ -1,5 +1,8 @@
 # Machine Learning
 
+## Project/Submission
+* mengenali bentuk tangan yang membentuk gunting, batu, atau kertas.
+
 Materi yang dipelajari:
 * Data Introduction : Pengenalan terhadap data dan bagaimana mempersiapkannya untuk diproses dengan machine learning.
 * Data Unsupervised & Supervised : Memahami 2 jenis machine learning yaitu unsupervised dan supervised, dengan contoh model regresi linier dan decision tree.
@@ -8,8 +11,5 @@ Materi yang dipelajari:
 * Neural Networks : Mengenal dasar dari neural network. Akan diterangkan mengenai multi layer perceptron serta convolutional neural network dalam image classification.
 * Tensorflow : Belajar tentang library tensorflow, sebuah powerful library yang dipakai untuk mengembangkan project machine learning.
 * Membuat Model dengan IBM Watson Studio
-
-# Submission
-* mengenali bentuk tangan yang membentuk gunting, batu, atau kertas.
 
 Courses Dicoding: https://www.dicoding.com/academies/184
