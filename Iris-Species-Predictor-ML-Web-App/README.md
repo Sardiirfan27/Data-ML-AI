@@ -1,5 +1,5 @@
 # Iris Predictor with Deep Learning | Web App
-### You can view the analysis and visualization of the dataset in the "Data" folder.
+### You can view the analysis and visualization of the dataset in the "data" folder.
 * dataset from https://www.kaggle.com/uciml/iris
 <img src="https://media3.giphy.com/media/gfm4JrywafLGDcjm7I/giphy.gif" width=400/>
 
