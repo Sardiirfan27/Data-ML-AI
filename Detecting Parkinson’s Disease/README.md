@@ -7,7 +7,7 @@ Parkinson’s disease is a progressive disorder of the central nervous system af
 XGBoost is a new Machine Learning algorithm designed with speed and performance in mind. XGBoost stands for eXtreme Gradient Boosting and is based on decision trees. In this project, we will import the XGBClassifier from the xgboost library; this is an implementation of the scikit-learn API for XGBoost classification.
 
 ## Detecting Parkinson’s Disease with XGBoost – Objective
-To build a model to accurately detect the presence of Parkinson’s disease in an individual.
+To build a model to accurately detect the presence of Parkinson’s disease in an individual. you can see the process at [Parkinson’s disease](https://github.com/Sardiirfan27/Data-ML-AI/blob/main/Detecting%20Parkinson%E2%80%99s%20Disease/Detecting_Parkinson's_Disease_with_XGBoost.ipynb)
 
 ## Dataset and Library
 In this Python machine learning project, using the Python libraries scikit-learn, numpy, pandas, and xgboost, we will build a model using an XGBClassifier. We’ll load the data, get the features and labels, scale the features, then split the dataset, build an XGBClassifier, and then calculate the accuracy of our model.
