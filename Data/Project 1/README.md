@@ -8,4 +8,6 @@ This kernel hopes to accomplish many goals, to name a few...
 # Analysis and Visualization
 
 You can see analysis and visualization of the data in [House Price Prediction](https://github.com/Sardiirfan27/Data-ML-AI/blob/main/Data/Project%201/a_detailed_regression_with_house_pricing.ipynb)
+
+# Reference
 courses and reference sources: https://www.kaggle.com/masumrumi/a-detailed-regression-guide-with-house-pricing
