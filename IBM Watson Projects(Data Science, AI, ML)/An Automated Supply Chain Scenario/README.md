@@ -57,7 +57,7 @@ Anda dapat memasukkan pertanyaan baru untuk Watson Analytics. Analytics mencocok
 
 Langsung di kiri atas, saya melihat prompt yang sangat relevan:"How do the values of FullfillmentTime compare by AssemblyID" . Karena FullfillmentTime adalah statistik kinerja yang ingin kami tingkatkan, dan kami berpendapat bahwa satu atau pabrik perakitan lainnya mungkin bermasalah, permintaan ini tampaknya relevan. Sekali lagi, kita dapat menelusuri topik dengan mengkliknya:
 
-*![super4](image/perbandingan.jpg)*
+*![super4](image/perbadingan.jpg)*
 
 Dari visualisasi ini, tampak bahwa pabrik perakitan memiliki waktu pemenuhan dampak yang cukup sama (atau setidaknya saya tidak melihat perbedaan material antara keduanya).
 Demi singkatnya, saya akan memberi tahu Anda bahwa menjelajahi pemasok menghasilkan kesimpulan yang sama, serta produk. Jadi, jika pemasok, perakit, atau produk yang berbeda tidak memengaruhi waktu pemenuhan secara unik, lalu apa?
