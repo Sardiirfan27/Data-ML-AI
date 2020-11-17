@@ -24,10 +24,18 @@ Dalam praktiknya, format pertukaran file yang paling umum adalah file Excel atau
 Catatan: Anda dapat menyegarkan ingatan Anda tentang langkah-langkah yang diperlukan untuk menambahkan data ke Watson Analytics dengan mengunjungi referensi online berikut: (https://www.ibm.com/support/knowledgecenter/SS4QC9/com.ibm.solutions.wa_an_overview.2.0.0.doc/wa_an_hlp_data_new.html).
 
 Proses Dalam IBM Watson:
-** Menambahkan Data Ke Watson Analytics
-** Memuat Dan Mereview Data
-** Explore Data. For example, Watson prompts "What are the values of FullfillmentTime for each Month(CustomerDeliveryDate)?" . Untuk melihat jawaban atas pertanyaan itu (atau hasil menjalankan kueri untuk mengambil nilai-nilai ini), Anda cukup mengklik pertanyaan tersebut dan Watson menjalankan kueri untuk Anda dan menyajikan hasilnya dalam visualisasi yang mengagumkan.
-** Anda bisa melihat nilai tambah Watson Analytics dengan jelas di sini. Watson mengotomatiskan proses untuk melakukan hal berikut:
+**1. Menambahkan Data Ke Watson Analytics **
+**2. Memuat Dan Mereview Data **
+**3. Explore Data. For example, Watson prompts "What are the values of FullfillmentTime for each Month(CustomerDeliveryDate)?" . Untuk melihat jawaban atas pertanyaan itu (atau hasil menjalankan kueri untuk mengambil nilai-nilai ini), Anda cukup mengklik pertanyaan tersebut dan Watson menjalankan kueri untuk Anda dan menyajikan hasilnya dalam visualisasi yang mengagumkan.
+**4. Anda bisa melihat nilai tambah Watson Analytics dengan jelas di sini. Watson mengotomatiskan proses untuk melakukan hal berikut: **
+> -a. Pikirkan pertanyaan (kueri)
+-b. Merumuskan query berdasarkan pertanyaan
+-c. Jalankan kueri
+-d. Tinjau data yang dihasilkan
+-e. Pikirkan jenis visualisasi yang sesuai
+-f. Buat visualisasi menggunakan hasil kueri
+-g. Menarik kesimpulan
+
 
 ## Dataset and Library
 In this Python machine learning project, using the Python libraries scikit-learn, numpy, pandas, and xgboost, we will build a model using an XGBClassifier. We’ll load the data, get the features and labels, scale the features, then split the dataset, build an XGBClassifier, and then calculate the accuracy of our model.
