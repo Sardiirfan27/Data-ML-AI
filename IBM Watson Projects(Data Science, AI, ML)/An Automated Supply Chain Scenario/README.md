@@ -29,12 +29,12 @@ Proses Dalam IBM Watson:
 
 **2. Memuat Dan Mereview Data**
 Explore Data, untuk memulai Penjelajahan klik pada gambar explore di kiri atas halaman Selamat Datang (ditunjukkan pada tangkapan layar berikut):
-![Product](image/explore.jpeg)
+![Product](image/explore.jpg)
 setelah itu Memilih file SuperSupplychain 
-![super](image/SuperSupplychain.jpeg)
+![super](image/SuperSupplychain.jpg)
 
 Misalnya, Watson meminta  "What are the values of FullfillmentTime for each Month(CustomerDeliveryDate)?" . Untuk melihat jawaban atas pertanyaan itu (atau hasil menjalankan kueri untuk mengambil nilai-nilai ini), Anda cukup mengklik pertanyaan tersebut dan Watson menjalankan kueri untuk Anda dan menyajikan hasilnya dalam visualisasi yang mengagumkan:
-![super2](image/visualisasi1.jpeg)
+![super2](image/visualisasi1.jpg)
 
 Anda bisa melihat nilai tambah Watson Analytics dengan jelas di sini. Watson mengotomatiskan proses untuk melakukan hal berikut**:
 - a. Pikirkan pertanyaan (kueri)
