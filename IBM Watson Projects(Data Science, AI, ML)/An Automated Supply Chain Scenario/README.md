@@ -31,7 +31,7 @@ Proses Dalam IBM Watson:
 
 **3. Explore Data. For example, Watson prompts "What are the values of FullfillmentTime for each Month(CustomerDeliveryDate)?" . Untuk melihat jawaban atas pertanyaan itu (atau hasil menjalankan kueri untuk mengambil nilai-nilai ini), Anda cukup mengklik pertanyaan tersebut dan Watson menjalankan kueri untuk Anda dan menyajikan hasilnya dalam visualisasi yang mengagumkan.**
 
-**4. Anda bisa melihat nilai tambah Watson Analytics dengan jelas di sini. Watson mengotomatiskan proses untuk melakukan hal berikut**:
+Anda bisa melihat nilai tambah Watson Analytics dengan jelas di sini. Watson mengotomatiskan proses untuk melakukan hal berikut**:
 - a. Pikirkan pertanyaan (kueri)
 - b. Merumuskan query berdasarkan pertanyaan
 - c. Jalankan kueri
@@ -39,6 +39,14 @@ Proses Dalam IBM Watson:
 - e. Pikirkan jenis visualisasi yang sesuai
 - f. Buat visualisasi menggunakan hasil kueri
 - g. Menarik kesimpulan
+
+**3. Membuat prediksi**
+Mendapatkan wawasan analitik dari data dengan Watson Analytics dilakukan dengan fitur Prediksi. Langkah-langkah untuk membuat prediksi itu sederhana. Langkah-langkah ini disebut sebagai *Prediction Workflow*. Alur kerja ini diuraikan dalam dokumentasi Watson.
+
+Setelah kami menjelajahi data rantai pasokan kami dan mengidentifikasi wawasan yang menurut kami bermanfaat, mari lanjutkan dan gunakan data tersebut untuk membuat prediksi Watson Analytics.
+
+Variabel prediktor adalah variabel yang dapat digunakan untuk memprediksi nilai variabel lain (seperti dalam regresi statistik). 
+(www.thefreedictionary.com/predictor+variable)
 
 
 ## Dataset and Library
