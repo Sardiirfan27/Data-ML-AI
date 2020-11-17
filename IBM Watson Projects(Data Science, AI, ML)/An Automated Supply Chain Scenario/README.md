@@ -28,13 +28,13 @@ Proses Dalam IBM Watson:
 **2. Memuat Dan Mereview Data **
 **3. Explore Data. For example, Watson prompts "What are the values of FullfillmentTime for each Month(CustomerDeliveryDate)?" . Untuk melihat jawaban atas pertanyaan itu (atau hasil menjalankan kueri untuk mengambil nilai-nilai ini), Anda cukup mengklik pertanyaan tersebut dan Watson menjalankan kueri untuk Anda dan menyajikan hasilnya dalam visualisasi yang mengagumkan.
 **4. Anda bisa melihat nilai tambah Watson Analytics dengan jelas di sini. Watson mengotomatiskan proses untuk melakukan hal berikut: **
-> -a. Pikirkan pertanyaan (kueri)
--b. Merumuskan query berdasarkan pertanyaan
--c. Jalankan kueri
--d. Tinjau data yang dihasilkan
--e. Pikirkan jenis visualisasi yang sesuai
--f. Buat visualisasi menggunakan hasil kueri
--g. Menarik kesimpulan
+- a. Pikirkan pertanyaan (kueri)
+- b. Merumuskan query berdasarkan pertanyaan
+- c. Jalankan kueri
+- d. Tinjau data yang dihasilkan
+- e. Pikirkan jenis visualisasi yang sesuai
+- f. Buat visualisasi menggunakan hasil kueri
+- g. Menarik kesimpulan
 
 
 ## Dataset and Library
