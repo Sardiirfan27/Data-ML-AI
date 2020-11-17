@@ -40,7 +40,9 @@ Misalnya, Watson meminta  "What are the values of FullfillmentTime for each Mont
 
 *![super2](image/visualisasi1.jpg)*
 
-Anda bisa melihat nilai tambah Watson Analytics dengan jelas di sini. Watson mengotomatiskan proses untuk melakukan hal berikut**:
+Bagi saya, tampaknya dibutuhkan waktu lebih lama untuk memenuhi pesanan yang dilakukan pada bulan Desember atau November, yang mungkin masuk akal jika kita menganggap bulan-bulan itu mungkin dikenal sebagai hadiah liburan (holiday gifting).
+
+Anda bisa melihat nilai tambah Watson Analytics dengan jelas di sini. Watson mengotomatiskan proses untuk melakukan hal berikut:
 - a. Pikirkan pertanyaan (kueri)
 - b. Merumuskan query berdasarkan pertanyaan
 - c. Jalankan kueri
@@ -49,10 +51,42 @@ Anda bisa melihat nilai tambah Watson Analytics dengan jelas di sini. Watson men
 - f. Buat visualisasi menggunakan hasil kueri
 - g. Menarik kesimpulan
 
+Anda dapat memasukkan pertanyaan baru untuk Watson Analytics. Analytics mencocokkan kata-kata yang Anda ketik dalam pertanyaan Anda dengan judul kolom dalam dataset Anda):
+
+*![super3](image/pertanyaan.jpg)*
+
+Langsung di kiri atas, saya melihat prompt yang sangat relevan:"How do the values of FullfillmentTime compare by AssemblyID" . Karena FullfillmentTime adalah statistik kinerja yang ingin kami tingkatkan, dan kami berpendapat bahwa satu atau pabrik perakitan lainnya mungkin bermasalah, permintaan ini tampaknya relevan. Sekali lagi, kita dapat menelusuri topik dengan mengkliknya:
+
+*![super4](image/perbandingan.jpg)*
+
+Dari visualisasi ini, tampak bahwa pabrik perakitan memiliki waktu pemenuhan dampak yang cukup sama (atau setidaknya saya tidak melihat perbedaan material antara keduanya).
+Demi singkatnya, saya akan memberi tahu Anda bahwa menjelajahi pemasok menghasilkan kesimpulan yang sama, serta produk. Jadi, jika pemasok, perakit, atau produk yang berbeda tidak memengaruhi waktu pemenuhan secara unik, lalu apa?
+Yah, tidak terlalu sulit untuk mempertimbangkan bahwa alih-alih membandingkan kinerja pemasok yang berbeda atau kinerja perakit yang berbeda, mungkin kita harus melihat apakah ada perbedaan antara waktu yang dibutuhkan untuk bahan sampai dari pemasok ( ke pabrik perakitan) dan waktu yang dibutuhkan untuk produk rakitan tiba dari perakit (ke gudang).
+
+Jadi, kita mungkin memikirkan pertanyaan ini sebagai berikut: apakah ada perbedaan material antara waktu yang dibutuhkan pemasok untuk mengirimkan bahan ke pabrik perakitan dan waktu yang dibutuhkan untuk pabrik perakitan untuk mengirimkan produk rakitan ke gudang? Berpikir dalam istilah Watson, karena kami memiliki kolom data yang berisi total ini, kami dapat mengetikkan kueri kami sebagai berikut:
+
+*how does daysfromsuppliertoassembly compare to daysfromassemblytowarehouse*
+
+Pertanyaan dapat diajukan untuk menjelajahi Watson Analytics. Dari sana, Watson Analytics memberi kita perintah yang relevan dengan pertanyaan. Dan jika Anda menelusuri prompt ini, Watson Analytics menyediakan visualisasi :
+
+*![super5](image/visualisasi2.jpg)*
+
+Setelah meninjau visualisasi ini, kami mungkin menyimpulkan bahwa waktu yang diperlukan untuk mengirimkan materi dari pemasok mana pun ke salah satu pabrik pelaksana dapat (mungkin secara materi) lebih lama dari rata-rata waktu yang diperlukan untuk mengirimkan produk rakitan ke gudang. Tapi apakah ini beruntung? Apakah semua pemasok bekerja sama? Mungkin Watson bisa menjawab ini.
+Misalkan kita mulai dengan mengajukan pertanyaan "What is the value of DaysFromSupplierToAssembly?" namun akan menampilkan visualisasi yang tidak menarik. kita dapat membuat lebih menarik dengan mengatur visualisasi tersebut sehingga menghasilkan tampilan seperti ini:
+
+*![super6](image/visualisasi3.jpg)*
+
+Gambar diatas merupakan hasil setelah menambahkan nama kolom SupplierID ke visualisasi.
+Dari visualisasi ini, kita dapat memahami bahwa pemasok nomor 1 biasanya lebih lambat dalam memenuhi pesanannya daripada pemasok 2 dan pemasok 3. Jadi, sekarang kita telah menyadari bahwa berapa hari yang dibutuhkan untuk memenuhi pesanan pelanggan (atau jumlah hari pelanggan harus menunggu papan selancar yang mereka pesan) sering dipengaruhi oleh menunggu bahan dikirim oleh pemasok ke pabrik perakitan, bukan waktu yang diperlukan untuk merakit produk, dan ada pemasok tertentu yang tampaknya memiliki penundaan. Sekarang, kami memiliki wawasan yang dapat ditindaklanjuti untuk meningkatkan kinerja rantai pasokan.
+
+Seperti yang Anda lihat, saat Anda melakukan eksplorasi data, Watson Analytics membantu Anda menemukan tidak hanya jawaban dalam data Anda (yang mengarah pada pengambilan keputusan yang lebih baik) tetapi bahkan mungkin lebih banyak pertanyaan. Kemampuan Watson untuk memberikan visualisasi yang kuat dengan cepat adalah kunci untuk mengenali pola dalam data yang Anda jelajahi. Watson memungkinkan Anda untuk memperbaiki setiap visualisasi dengan cara yang berbeda dan saat Anda melakukannya, Watson Analytics memperbarui grafik untuk berhubungan dengan konteks baru yang Anda periksa.
+
 **3. Membuat prediksi**
 Mendapatkan wawasan analitik dari data dengan Watson Analytics dilakukan dengan fitur Prediksi. Langkah-langkah untuk membuat prediksi itu sederhana. Langkah-langkah ini disebut sebagai *Prediction Workflow*. Alur kerja ini diuraikan dalam dokumentasi Watson.
 
-Setelah kami menjelajahi data rantai pasokan kami dan mengidentifikasi wawasan yang menurut kami bermanfaat, mari lanjutkan dan gunakan data tersebut untuk membuat prediksi Watson Analytics.
+Setelah kami menjelajahi data rantai pasokan kami dan mengidentifikasi wawasan yang menurut kami bermanfaat, mari lanjutkan dan gunakan data tersebut untuk membuat prediksi Watson Analytics. Membuat analisis baru- FullfillmentTime kemudian hasil visualisasinya:
+
+*![super7](image/prediksi.jpg)*
 
 Variabel prediktor adalah variabel yang dapat digunakan untuk memprediksi nilai variabel lain (seperti dalam regresi statistik). 
 (www.thefreedictionary.com/predictor+variable)
@@ -61,32 +95,23 @@ Ada visualisasi yang dihasilkan untuk setiap prediktor kunci, memberi Anda infor
 
 Dalam prediksi kami, lingkaran biru dalam visualisasi spiral untuk prediktor DaysFromSupplierToAssembly disertakan dalam visualisasi terperinci yang sesuai untuk DaysFromSupplierToAssembly (ditampilkan di sini) dan jika Anda mengklik visualisasi tersebut, Anda dapat melihatnya lebih detail di halaman Wawasan Utama:
 
+*![super8](image/prediksi1.jpg)*
+
+Gambar diatas merupakan Visualisasi untuk DaysFromSupplierToAssembly.
+
+Dalam prediksi rantai pasokan kami, kami memulai dengan anggapan bahwa penyebab waktu pengiriman pesanan yang semakin lama adalah karena adanya masalah di pabrik perakitan. Setelah membuat eksplorasi, pertama-tama kami melihat bahwa waktu pengiriman meningkat selama November dan Desember, tetapi itu diharapkan, karena volume pesanan yang lebih tinggi. Selanjutnya, kami membandingkan kinerja setiap pabrik perakitan dan menemukan bahwa kinerjanya hampir sama. Dari sana, kami memeriksa tingkat kinerja yang berbeda dari setiap pemasok dan juga menjelajahi produk, untuk melihat apakah produk tertentu memerlukan waktu tunggu tambahan.
+
+Terakhir, kami menemukan bahwa ada perbedaan antara waktu yang dibutuhkan untuk mengirimkan material dari pemasok ke pabrik perakitan dan waktu yang dibutuhkan untuk mengirimkan produk rakitan dari pabrik perakitan ke gudang.
+Dengan kesadaran ini, kami kemudian membuat prediksi Watson Analytics menggunakan kolom FullfillmentTime sebagai target. Di bagian berikut, kami akan memeriksa cara menyimpan dan membagikan hasil secara lebih detail.
+
+**4. Membagikan Visualisasi ke Dashboard**
+Watson analitycs dapat membagikan hasil visualisasi . secara keseluruhan kita dapat membuat grafik atau visualisasi seperti ini:
+
+*![super9](image/share.jpg)*
 
 ## Summary
 Mengingat tujuan perusahaan untuk meningkatkan waktu yang dibutuhkan untuk memenuhi pesanan pelanggan, dalam project ini kami membahas proyek Watson Analytics yang berfokus pada rantai pasokannya dan masalah yang dirasakan dengan merakit papan tepat waktu. Setelah analisis, kami melihat bahwa masalahnya sebenarnya ada pada pemasok, bukan perakit, sebuah wawasan utama yang mengisolasi penyebab kinerja pengiriman.
 
-## Approach
-
-Parkinsons detection islikely best done with an XGBoost since outputs are 0 or 1 and it seems mostly linear.
-
-The UDPR is very hard to fine tune with XGBoost. With an NN in Keras, we can fit much better. There are still some very bad apples in our data/predictions bur the performance is overall/on average much better.
-You can find more info on the datasets in UCI's database. ([info for Parkinsons detection](https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/parkinsons.names)) ([info for UDPR](https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/telemonitoring/parkinsons_updrs.names))
-
-## Credits
-
-Citations for the datasets used:
-
-```
-'Exploiting Nonlinear Recurrence and Fractal Scaling Properties for Voice Disorder Detection', 
-Little MA, McSharry PE, Roberts SJ, Costello DAE, Moroz IM. 
-BioMedical Engineering OnLine 2007, 6:23 (26 June 2007)
-```
-
-```
-A Tsanas, MA Little, PE McSharry, LO Ramig (2009)
-'Accurate telemonitoring of Parkinson.s disease progression by non-invasive speech tests',
-IEEE Transactions on Biomedical Engineering (to appear).
-```
 
 ## Reference
 
