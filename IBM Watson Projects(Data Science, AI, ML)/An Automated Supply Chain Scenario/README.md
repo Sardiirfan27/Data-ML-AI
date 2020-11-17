@@ -47,14 +47,14 @@ Setelah kami menjelajahi data rantai pasokan kami dan mengidentifikasi wawasan y
 
 Variabel prediktor adalah variabel yang dapat digunakan untuk memprediksi nilai variabel lain (seperti dalam regresi statistik). 
 (www.thefreedictionary.com/predictor+variable)
+Saat Anda membuka prediksi, halaman Prediktor Teratas akan muncul. Visualisasi spiral yang Anda lihat menunjukkan kepada Anda pendorong atau prediktor utama teratas (berwarna, dengan prediktor lain berwarna abu-abu). Semakin dekat prediktor ke pusat spiral, semakin kuat prediktor tersebut.
+Ada visualisasi yang dihasilkan untuk setiap prediktor kunci, memberi Anda informasi tentang apa yang mendorong setiap perilaku dan hasil. Jika Anda mengklik salah satu prediktor (atau mengarahkan kursor ke atasnya), Anda dapat melihat beberapa detail tentangnya. Setiap prediktor memiliki visualisasi snapshot yang sesuai yang berisi informasi tentang prediktor dan bagaimana pengaruhnya terhadap target. Warna lingkaran pada visualisasi spiral juga ditemukan pada detail visualisasi yang sesuai.
+
+Dalam prediksi kami, lingkaran biru dalam visualisasi spiral untuk prediktor DaysFromSupplierToAssembly disertakan dalam visualisasi terperinci yang sesuai untuk DaysFromSupplierToAssembly (ditampilkan di sini) dan jika Anda mengklik visualisasi tersebut, Anda dapat melihatnya lebih detail di halaman Wawasan Utama:
 
 
-## Dataset and Library
-In this Python machine learning project, using the Python libraries scikit-learn, numpy, pandas, and xgboost, we will build a model using an XGBClassifier. We’ll load the data, get the features and labels, scale the features, then split the dataset, build an XGBClassifier, and then calculate the accuracy of our model.
-
-We'll use the data from UC Irvine's amazing dataset repository, specifically the [Parkinsons ML database](https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/).
-
-There are two datasets within this. The first is in the root folder (`parkinsons.data` which is included here too) and can be used to detect Parkinsons. The second is within the `telemonitoring/` directory and contains UDPR scores for us to predict.
+## Summary
+Mengingat tujuan perusahaan untuk meningkatkan waktu yang dibutuhkan untuk memenuhi pesanan pelanggan, dalam project ini kami membahas proyek Watson Analytics yang berfokus pada rantai pasokannya dan masalah yang dirasakan dengan merakit papan tepat waktu. Setelah analisis, kami melihat bahwa masalahnya sebenarnya ada pada pemasok, bukan perakit, sebuah wawasan utama yang mengisolasi penyebab kinerja pengiriman.
 
 ## Approach
 
