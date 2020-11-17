@@ -116,4 +116,3 @@ Mengingat tujuan perusahaan untuk meningkatkan waktu yang dibutuhkan untuk memen
 ## Reference
 https://learning.oreilly.com/library/view/ibm-watson-projects/9781789343717/
 
-https://watson.analytics.ibmcloud.com 
