@@ -2,7 +2,7 @@
 In the folder there are several projects related to Data Science, Data Analysis, Machine Learning and Artificial Intelligence.
 The libraries used are _scikit-learn, Pandas, NumPy, Scipy, Seaborn, Matplotlib_ .
 
-Project run at https://colab.research.google.com/ , IBM Watson Studio (https://dataplatform.cloud.ibm.com/) and Google Cloud Platform (https://cloud.google.com/gcp).
+Project run at [Google Collaboratory](https://colab.research.google.com/) , [IBM Watson Studio](https://dataplatform.cloud.ibm.com/) and [Google Cloud Platform](https://cloud.google.com/gcp).
 here are some of the projects in that folder:
 
 - [Predicting Boston Housing Prices](https://github.com/sajal2692/data-science-portfolio/blob/master/boston_housing/boston_housing.ipynb): A model to predict the value of a given house in the Boston real estate market using various statistical analysis tools. Identified the best price that a client can sell their house utilizing machine learning.
