@@ -1,5 +1,6 @@
 # Data-ML-AI
 In the folder there are several projects related to Data Science, Data Analysis, Machine Learning and Artificial Intelligence.
+The libraries used are _scikit-learn, Pandas, NumPy, Scipy, Seaborn, Matplotlib_ .
 
 Project run at https://colab.research.google.com/ , IBM Watson Studio (https://dataplatform.cloud.ibm.com/) and Google Cloud Platform (https://cloud.google.com/gcp).
 here are some of the projects in that folder:
