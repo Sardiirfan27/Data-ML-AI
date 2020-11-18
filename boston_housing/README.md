@@ -9,3 +9,6 @@ For the purposes of this project, the following preprocessing steps have been ma
 - 1 data point has an 'RM' value of 8.78. This data point can be considered an outlier and has been removed.
 - The features 'RM', 'LSTAT', 'PTRATIO', and 'MEDV' are essential. The remaining non-relevant features have been excluded.
 - The feature 'MEDV' has been multiplicatively scaled to account for 35 years of market inflation.
+
+## Detail
+You can view data analysis and visualization at [boston_housing](https://github.com/Sardiirfan27/Data-ML-AI/blob/main/boston_housing/boston_housing.ipynb)
