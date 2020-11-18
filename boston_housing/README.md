@@ -11,4 +11,4 @@ For the purposes of this project, the following preprocessing steps have been ma
 - The feature 'MEDV' has been multiplicatively scaled to account for 35 years of market inflation.
 
 ## Detail
-You can view data analysis and visualization at [boston_housing](https://github.com/Sardiirfan27/Data-ML-AI/blob/main/boston_housing/boston_housing.ipynb)
+You can view data analysis and visualization at [boston_housing.ipynb](https://github.com/Sardiirfan27/Data-ML-AI/blob/main/boston_housing/boston_housing.ipynb)
