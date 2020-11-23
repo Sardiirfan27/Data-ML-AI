@@ -12,3 +12,6 @@ For the purposes of this project, the following preprocessing steps have been ma
 
 ## Detail
 You can view data analysis and visualization at [boston_housing.ipynb](https://github.com/Sardiirfan27/Data-ML-AI/blob/main/boston_housing/boston_housing.ipynb)
+
+## Reference
+https://github.com/sajal2692/data-science-portfolio
