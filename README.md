@@ -5,7 +5,7 @@ The libraries and tools used are _scikit-learn, Pandas, NumPy, Scipy, Seaborn, M
 
 Project run at [Google Collaboratory](https://colab.research.google.com/) , [IBM Watson Studio](https://dataplatform.cloud.ibm.com/) and [Google Cloud Platform](https://cloud.google.com/gcp).
 
-Below are some of my projects that I have made and practiced, you can see the results and project descriptions that I have created:
+Below are some of my projects that I have made and practiced, you can see the results and descriptions of my projects:
 
 - [Create a Chabot With SAP Conversational AI](https://developers.sap.com/mission.cai-get-started.html): Create AI chatbots that are able to answer customer questions automatically. You can test my project and see the results of the project that have been made in viewing on my website https://sardiirfan27.github.io/
 - [Predicting Boston Housing Prices](https://github.com/Sardiirfan27/Data-ML-AI/blob/main/boston_housing): A model to predict the value of a given house in the Boston real estate market using various statistical analysis tools. Identified the best price that a client can sell their house utilizing machine learning.
