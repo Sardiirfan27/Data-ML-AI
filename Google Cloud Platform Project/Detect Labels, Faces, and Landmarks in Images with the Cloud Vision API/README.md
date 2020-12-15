@@ -101,7 +101,7 @@ The first Cloud Vision API feature you'll try out is label detection. This metho
 
 Call the Vision API with curl:
 
-**curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}**
+    curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
 
 Your response should look something like the following:
 
@@ -216,7 +216,7 @@ To try out web detection, use the same image of beignets and change one line in 
 
 **2. To send it to the Vision API, use the same curl command as before (just press the up arrow in Cloud Shell):**
 
-**curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}**
+    curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
 
 Dive into the response, starting with webEntities. Here are some of the entities this image returned:
 
@@ -320,48 +320,48 @@ Now you're ready to call the Vision API using the same curl command you used abo
 
 Take a look at the faceAnnotations object in the response. You'll notice the API returns an object for each face found in the image - in this case, three. Here's a clipped version of the response:
 
-{
-      "faceAnnotations": [
-        {
-          "boundingPoly": {
-            "vertices": [
-              {
-                "x": 669,
-                "y": 324
-              },
-              ...
-            ]
-          },
-          "fdBoundingPoly": {
-            ...
-          },
-          "landmarks": [
+    {
+          "faceAnnotations": [
             {
-              "type": "LEFT_EYE",
-              "position": {
-                "x": 692.05646,
-                "y": 372.95868,
-                "z": -0.00025268539
-              }
-            },
+              "boundingPoly": {
+                "vertices": [
+                  {
+                    "x": 669,
+                    "y": 324
+                  },
+                  ...
+                ]
+              },
+              "fdBoundingPoly": {
+                ...
+              },
+              "landmarks": [
+                {
+                  "type": "LEFT_EYE",
+                  "position": {
+                    "x": 692.05646,
+                    "y": 372.95868,
+                    "z": -0.00025268539
+                  }
+                },
+                ...
+              ],
+              "rollAngle": 0.21619819,
+              "panAngle": -23.027969,
+              "tiltAngle": -1.5531756,
+              "detectionConfidence": 0.72354823,
+              "landmarkingConfidence": 0.20047489,
+              "joyLikelihood": "POSSIBLE",
+              "sorrowLikelihood": "VERY_UNLIKELY",
+              "angerLikelihood": "VERY_UNLIKELY",
+              "surpriseLikelihood": "VERY_UNLIKELY",
+              "underExposedLikelihood": "VERY_UNLIKELY",
+              "blurredLikelihood": "VERY_UNLIKELY",
+              "headwearLikelihood": "VERY_LIKELY"
+            }
             ...
-          ],
-          "rollAngle": 0.21619819,
-          "panAngle": -23.027969,
-          "tiltAngle": -1.5531756,
-          "detectionConfidence": 0.72354823,
-          "landmarkingConfidence": 0.20047489,
-          "joyLikelihood": "POSSIBLE",
-          "sorrowLikelihood": "VERY_UNLIKELY",
-          "angerLikelihood": "VERY_UNLIKELY",
-          "surpriseLikelihood": "VERY_UNLIKELY",
-          "underExposedLikelihood": "VERY_UNLIKELY",
-          "blurredLikelihood": "VERY_UNLIKELY",
-          "headwearLikelihood": "VERY_LIKELY"
-        }
-        ...
-     }
-}
+         }
+    }
 
 - boundingPoly gives you the x,y coordinates around the face in the image.
 -  is a smaller box than boundingPoly, focusing on the skin part of the face.
@@ -406,7 +406,7 @@ To use this method, you'll upload a new image with faces to the Cloud Storage bu
 ## Calling the Vision API and parsing the response
 Now you're ready to call the Vision API using the same curl command you used above:
 
-**curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}**
+    curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
 
 Next, look at the landmarkAnnotations part of the response:
 
@@ -449,7 +449,7 @@ Here, the Vision API was able to tell that this picture was taken in Boston, and
 - The locations key tells us the latitude longitude coordinates of the picture.
 
 Explore other Vision API methods
-You've looked at the Vision API's label, face, and landmark detection methods, but there are three others you haven't explored. Dive into [the doc)s](https://cloud.google.com/vision/docs/reference/rest/v1/images/annotate#Feature) to learn about the other three:
+You've looked at the Vision API's label, face, and landmark detection methods, but there are three others you haven't explored. Dive into [the docs](https://cloud.google.com/vision/docs/reference/rest/v1/images/annotate#Feature) to learn about the other three:
 
 - Logo detection: identify common logos and their location in an image.
 
