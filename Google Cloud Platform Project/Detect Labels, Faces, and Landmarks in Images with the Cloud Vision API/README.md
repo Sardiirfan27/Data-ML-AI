@@ -457,3 +457,7 @@ You've looked at the Vision API's label, face, and landmark detection methods, b
 
 - Text detection: run OCR to extract text from images. This method can even identify the language of text present in an image.
 
+
+# Reference
+https://www.qwiklabs.com/focuses/1841?parent=catalog#
+
