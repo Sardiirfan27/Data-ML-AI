@@ -21,7 +21,7 @@ Now save it to an environment variable to avoid having to insert the value of yo
 
 Run the following in Cloud Shell, replacing <your_api_key> with the key you just copied:
 
-**export API_KEY=<YOUR_API_KEY>**
+    export API_KEY=<YOUR_API_KEY>
 
 ## Upload an Image to a Cloud Storage bucket
 There are two ways to send an image to the Vision API for image detection: by sending the API a base64 encoded image string, or passing it the URL of a file stored in Cloud Storage. We'll be using a Cloud Storage URL. The first step is to create a Cloud Storage bucket to store our images.
@@ -75,23 +75,23 @@ or your preferred command line editor (nano, vim, or emacs), create a request.js
 
 **Note:** Replace `my-bucket-name` with the name of your storage bucket.
 
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/donuts.png"
-          }
-        },
-        "features": [
+    {
+      "requests": [
           {
-            "type": "LABEL_DETECTION",
-            "maxResults": 10
+            "image": {
+              "source": {
+                  "gcsImageUri": "gs://my-bucket-name/donuts.png"
+              }
+            },
+            "features": [
+              {
+                "type": "LABEL_DETECTION",
+                "maxResults": 10
+              }
+            ]
           }
-        ]
-      }
-  ]
-}
+      ]
+    }
 
 **3. Save the file.**
 
@@ -105,74 +105,74 @@ Call the Vision API with curl:
 
 Your response should look something like the following:
 
-**{
-  "responses": [
-    {
-      "labelAnnotations": [
+     {
+      "responses": [
         {
-          "mid": "/m/01dk8s",
-          "description": "Powdered sugar",
-          "score": 0.9861496,
-          "topicality": 0.9861496
-        },
-        {
-          "mid": "/m/01wydv",
-          "description": "Beignet",
-          "score": 0.9565117,
-          "topicality": 0.9565117
-        },
-        {
-          "mid": "/m/02wbm",
-          "description": "Food",
-          "score": 0.9424965,
-          "topicality": 0.9424965
-        },
-        {
-          "mid": "/m/0hnyx",
-          "description": "Pastry",
-          "score": 0.8173416,
-          "topicality": 0.8173416
-        },
-        {
-          "mid": "/m/02q08p0",
-          "description": "Dish",
-          "score": 0.8076026,
-          "topicality": 0.8076026
-        },
-        {
-          "mid": "/m/01ykh",
-          "description": "Cuisine",
-          "score": 0.79036003,
-          "topicality": 0.79036003
-        },
-        {
-          "mid": "/m/03nsjgy",
-          "description": "Kourabiedes",
-          "score": 0.77726763,
-          "topicality": 0.77726763
-        },
-        {
-          "mid": "/m/06gd3r",
-          "description": "Angel wings",
-          "score": 0.73792106,
-          "topicality": 0.73792106
-        },
-        {
-          "mid": "/m/06x4c",
-          "description": "Sugar",
-          "score": 0.71921736,
-          "topicality": 0.71921736
-        },
-        {
-          "mid": "/m/01zl9v",
-          "description": "Zeppole",
-          "score": 0.7111677,
-          "topicality": 0.7111677
+          "labelAnnotations": [
+            {
+              "mid": "/m/01dk8s",
+              "description": "Powdered sugar",
+              "score": 0.9861496,
+              "topicality": 0.9861496
+            },
+            {
+              "mid": "/m/01wydv",
+              "description": "Beignet",
+              "score": 0.9565117,
+              "topicality": 0.9565117
+            },
+            {
+              "mid": "/m/02wbm",
+              "description": "Food",
+              "score": 0.9424965,
+              "topicality": 0.9424965
+            },
+            {
+              "mid": "/m/0hnyx",
+              "description": "Pastry",
+              "score": 0.8173416,
+              "topicality": 0.8173416
+            },
+            {
+              "mid": "/m/02q08p0",
+              "description": "Dish",
+              "score": 0.8076026,
+              "topicality": 0.8076026
+            },
+            {
+              "mid": "/m/01ykh",
+              "description": "Cuisine",
+              "score": 0.79036003,
+              "topicality": 0.79036003
+            },
+            {
+              "mid": "/m/03nsjgy",
+              "description": "Kourabiedes",
+              "score": 0.77726763,
+              "topicality": 0.77726763
+            },
+            {
+              "mid": "/m/06gd3r",
+              "description": "Angel wings",
+              "score": 0.73792106,
+              "topicality": 0.73792106
+            },
+            {
+              "mid": "/m/06x4c",
+              "description": "Sugar",
+              "score": 0.71921736,
+              "topicality": 0.71921736
+            },
+            {
+              "mid": "/m/01zl9v",
+              "description": "Zeppole",
+              "score": 0.7111677,
+              "topicality": 0.7111677
+            }
+          ]
         }
       ]
     }
-  ]
-}**
 
 The API was able to identify the specific type of donuts these are, powdered sugar. Cool! For each label the Vision API found, it returns a:
 
@@ -194,23 +194,23 @@ To try out web detection, use the same image of beignets and change one line in 
 **1. Under the features list, change type from LABEL_DETECTION to WEB_DETECTION. The request.json should now look like this:**
 
 
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/donuts.png"
-          }
-        },
-        "features": [
+    {
+      "requests": [
           {
-            "type": "WEB_DETECTION",
-            "maxResults": 10
+            "image": {
+              "source": {
+                  "gcsImageUri": "gs://my-bucket-name/donuts.png"
+              }
+            },
+            "features": [
+              {
+                "type": "WEB_DETECTION",
+                "maxResults": 10
+              }
+            ]
           }
-        ]
-      }
-  ]
-}
+      ]
+    }
 
 **Save** the file.
 
@@ -220,40 +220,40 @@ To try out web detection, use the same image of beignets and change one line in 
 
 Dive into the response, starting with webEntities. Here are some of the entities this image returned:
 
-"{
-  "responses": [
     {
-      "webDetection": {
-        "webEntities": [
-          {
-            "entityId": "/m/0z5n",
-            "score": 0.8868,
-            "description": "Application programming interface"
-          },
-          {
-            "entityId": "/m/07kg1sq",
-            "score": 0.3139,
-            "description": "Encapsulation"
-          },
-          {
-            "entityId": "/m/0105pbj4",
-            "score": 0.2713,
-            "description": "Google Cloud Platform"
-          },
-          {
-            "entityId": "/m/01hyh_",
-            "score": 0.2594,
-            "description": "Machine learning"
-          },
-          ...
-        ]
+      "responses": [
+        {
+          "webDetection": {
+            "webEntities": [
+              {
+                "entityId": "/m/0z5n",
+                "score": 0.8868,
+                "description": "Application programming interface"
+              },
+              {
+                "entityId": "/m/07kg1sq",
+                "score": 0.3139,
+                "description": "Encapsulation"
+              },
+              {
+                "entityId": "/m/0105pbj4",
+                "score": 0.2713,
+                "description": "Google Cloud Platform"
+              },
+              {
+                "entityId": "/m/01hyh_",
+                "score": 0.2594,
+                "description": "Machine learning"
+              },
+              ...
+            ]
         
 This image has been used in many presentations on Cloud ML APIs, which is why the API found the entities "Machine learning" and "Google Cloud Platform".
 
 If you inpsect the URLs under fullMatchingImages, partialMatchingImages, and pagesWithMatchingImages, you'll notice that many of the URLs point to this lab site (super meta!).
 
 Say you wanted to find other images of beignets, but not the exact same images. That's where the visuallySimilarImages part of the API response comes in handy. Here are a few of the visually similar images it found:
-
+        
         "visuallySimilarImages": [
           {
             "url": "https://media.istockphoto.com/photos/cafe-du-monde-picture-id1063530570?k=6&m=1063530570&s=612x612&w=0&h=b74EYAjlfxMw8G-G_6BW-6ltP9Y2UFQ3TjZopN-pigI="
@@ -291,32 +291,32 @@ To use this method, you'll upload a new image with faces to the Cloud Storage bu
 ## Updating request file
 **1. Next, update your request.json file with the following, which includes the URL of the new image, and uses face and landmark detection instead of label detection. Be sure to replace my-bucket-name with the name of your Cloud Storage bucket:**
 
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/selfie.png"
-          }
-        },
-        "features": [
+    {
+      "requests": [
           {
-            "type": "FACE_DETECTION"
-          },
-          {
-            "type": "LANDMARK_DETECTION"
+            "image": {
+              "source": {
+                  "gcsImageUri": "gs://my-bucket-name/selfie.png"
+              }
+            },
+            "features": [
+              {
+                "type": "FACE_DETECTION"
+              },
+              {
+                "type": "LANDMARK_DETECTION"
+              }
+            ]
           }
-        ]
-      }
-  ]
-}
+      ]
+    }
 
 **2. Save the file.**
 
 ## Calling the Vision API and parsing the response
 Now you're ready to call the Vision API using the same curl command you used above:
 
-**curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}**
+    curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
 
 Take a look at the faceAnnotations object in the response. You'll notice the API returns an object for each face found in the image - in this case, three. Here's a clipped version of the response:
 
@@ -384,23 +384,24 @@ To use this method, you'll upload a new image with faces to the Cloud Storage bu
 ## Updating request file
 
 **1. Next, update your request.json file with the following, which includes the URL of the new image, and uses landmark detection. Be sure to replace my-bucket-name with the name of your Cloud Storage bucket:**
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/city.png"
-          }
-        },
-        "features": [
-          {
-            "type": "LANDMARK_DETECTION",
-            "maxResults": 10,
-          }
-        ]
-      }
-  ]
-}
+        
+        {
+          "requests": [
+              {
+                "image": {
+                  "source": {
+                      "gcsImageUri": "gs://my-bucket-name/city.png"
+                  }
+                },
+                "features": [
+                  {
+                    "type": "LANDMARK_DETECTION",
+                    "maxResults": 10,
+                  }
+                ]
+              }
+          ]
+        }
 
 ## Calling the Vision API and parsing the response
 Now you're ready to call the Vision API using the same curl command you used above:
@@ -433,7 +434,7 @@ Next, look at the landmarkAnnotations part of the response:
             ]
           },
 
-...
+          ...
 
 Here, the Vision API was able to tell that this picture was taken in Boston, and gives you a map of the exact location. The values in this response should look similar to the labelAnnotations response above:
 
