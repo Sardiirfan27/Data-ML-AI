@@ -378,7 +378,6 @@ The response you're reading is for the person standing furthest back in the imag
 To use this method, you'll upload a new image with faces to the Cloud Storage bucket.
 
 **1. Right click on the following image, then click Save image as and save it to your computer as city.png.**
-
 *![entry4](https://cdn.qwiklabs.com/%2Fv47QS0KOC28%2F03bZx0R%2FO0iLLvtYQUOZyvnjIfz%2BIE%3D)*
 
 
