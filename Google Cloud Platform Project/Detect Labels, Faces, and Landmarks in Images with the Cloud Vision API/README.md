@@ -284,7 +284,8 @@ Next explore the face detection methods of the Vision API.
 To use this method, you'll upload a new image with faces to the Cloud Storage bucket.
 
 **1. Right click on the following image, then click Save image as and save it to your computer as selfie.png.**
-*![entry1](https://cdn.qwiklabs.com/5%2FxwpTRxehGuIRhCz3exglbWOzueKIPikyYj0Rx82L0%3D)*
+
+*![cek](https://cdn.qwiklabs.com/%2Fv47QS0KOC28%2F03bZx0R%2FO0iLLvtYQUOZyvnjIfz%2BIE%3D)*
 
 **2. Now upload it to your Cloud Storage bucket the same way you did before, and make it public.**
 
