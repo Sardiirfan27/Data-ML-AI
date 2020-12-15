@@ -4,12 +4,15 @@
 Since you'll be using curl to send a request to the Vision API, you'll need to generate an API key to pass in your request URL.
 
 **1. To create an API key, navigate to APIs & services > Credentials in your Cloud console:**
+
 *![apikey](https://cdn.qwiklabs.com/8cDO0kBoc2byO7otbM1QFWuYWv0ZZAUH1iBDR200dKA%3D)*
 
 **2. Click on the Create credentials button.**
+
 *![credentials](https://cdn.qwiklabs.com/OPRnwJAzyxcK1bvJ1Iv7f3FyL5WaNzAqwiu5Yr6oPTI%3D)*
 
 **3. In the drop-down menu, select API key.**
+
 *![dropdown](https://cdn.qwiklabs.com/OyE7y6jsqa%2BB6obwA%2BVYClGCPXy6ER1BKE0f3cLlx7s%3D)*
 
 **4. Next, copy the key you just generated**
@@ -24,23 +27,29 @@ Run the following in Cloud Shell, replacing <your_api_key> with the key you just
 There are two ways to send an image to the Vision API for image detection: by sending the API a base64 encoded image string, or passing it the URL of a file stored in Cloud Storage. We'll be using a Cloud Storage URL. The first step is to create a Cloud Storage bucket to store our images.
 
 **1. Navigate to Navigation menu > Storage in the Cloud console for your project, then click Create bucket.**
+
 *![bucked](https://cdn.qwiklabs.com/YjeT9%2FI0vbVTm8jEKjpWvL2yQdCuNCqQTnfTf%2Fsabmg%3D)*
 
 **2. Give your bucket a unique name. You can use the default settings for the bucket - click Create.**
+
 *![namebucked](https://cdn.qwiklabs.com/z%2FofyjLlIzROfsVasYRvkyP0ai5aN4I3HlY1LnmCViw%3D)*
 
 **Upload an image to your bucket **
 
 **1. Right click on the following image of donuts, then click Save image as and save it to your computer as donuts.png.**
+
 *![testbucked](https://cdn.qwiklabs.com/V4PmEUI7yXdKpytLNRqwV%2ByGHqym%2BfhdktVi8nj4pPs%3D)*
 
-**2. Go to the bucket you just created and click Upload files. Then select donuts.png. **
+**2. Go to the bucket you just created and click Upload files. Then select donuts.png.**
+
 *![buckeddata](https://cdn.qwiklabs.com/Yh4DAGGG5sWsKdgvuVv8mhLb%2Fsr5hMb0OFOji7Wskm8%3D)*
 
 **3. Now you need to make this image publicly available. Click on the 3 dots for your image and select Edit Permissions.**
+
 *![edit](https://cdn.qwiklabs.com/kwtkEJ18%2FGOgDZs915lfQ4ZQvfnPbw8JkECN6egxmKg%3D)*
 
 **4. Click Add entry then enter the following:**
+
 *Entity: Public*
 
 *Name: allUsers*
@@ -56,12 +65,13 @@ Now that you have the file in your bucket, you're ready to create a Vision API r
 Now you'll create a request.json file in the Cloud Shell environment.
 
 **1. Using the Cloud Shell code editor (by clicking the pencil icon in the Cloud Shell ribbon).**
+
 *![edit1](https://cdn.qwiklabs.com/O1pSCpaSe6p5nxOMmjQg3Vsf0YwHaqW2bT56hM6Iym0%3D)*
 
 or your preferred command line editor (nano, vim, or emacs), create a request.json file.
 
 **2. Type or paste the following code into the file:**
-*![edit2](https://cdn.qwiklabs.com/O1pSCpaSe6p5nxOMmjQg3Vsf0YwHaqW2bT56hM6Iym0%3D)*
+
 
 **Note:** Replace `my-bucket-name` with the name of your storage bucket.
 
@@ -182,6 +192,8 @@ In addition to getting labels on what's in your image, the Vision API can also s
 To try out web detection, use the same image of beignets and change one line in the request.json file (you can also venture out into the unknown and use an entirely different image).
 
 **1. Under the features list, change type from LABEL_DETECTION to WEB_DETECTION. The request.json should now look like this:**
+
+
 {
   "requests": [
       {
@@ -208,7 +220,7 @@ To try out web detection, use the same image of beignets and change one line in 
 
 Dive into the response, starting with webEntities. Here are some of the entities this image returned:
 
-{
+"{
   "responses": [
     {
       "webDetection": {
@@ -254,7 +266,7 @@ Say you wanted to find other images of beignets, but not the exact same images. 
           },
 
           ...
-]
+          ]
 
 You can navigate to those URLs to see the similar images:
 *![entry1](https://cdn.qwiklabs.com/vgWkDHchgJbOs4QsNHnrTHKs5%2Fo1rkQWFxMCLtHmrPo%3D)*
