@@ -6,13 +6,13 @@ Since you'll be using curl to send a request to the Vision API, you'll need to g
 **1. To create an API key, navigate to APIs & services > Credentials in your Cloud console:**
 *![apikey](https://cdn.qwiklabs.com/8cDO0kBoc2byO7otbM1QFWuYWv0ZZAUH1iBDR200dKA%3D)*
 
-**2. Click on the Create credentials button. **
+**2. Click on the Create credentials button.**
 *![credentials](https://cdn.qwiklabs.com/OPRnwJAzyxcK1bvJ1Iv7f3FyL5WaNzAqwiu5Yr6oPTI%3D)*
 
-**3. In the drop-down menu, select API key. **
+**3. In the drop-down menu, select API key.**
 *![dropdown](https://cdn.qwiklabs.com/OyE7y6jsqa%2BB6obwA%2BVYClGCPXy6ER1BKE0f3cLlx7s%3D)*
 
-**4. Next, copy the key you just generated **
+**4. Next, copy the key you just generated**
 
 Now save it to an environment variable to avoid having to insert the value of your API key in each request.
 
@@ -37,11 +37,11 @@ There are two ways to send an image to the Vision API for image detection: by se
 **2. Go to the bucket you just created and click Upload files. Then select donuts.png. **
 *![buckeddata](https://cdn.qwiklabs.com/Yh4DAGGG5sWsKdgvuVv8mhLb%2Fsr5hMb0OFOji7Wskm8%3D)*
 
-**3. Now you need to make this image publicly available. Click on the 3 dots for your image and select Edit Permissions. **
+**3. Now you need to make this image publicly available. Click on the 3 dots for your image and select Edit Permissions.**
 *![edit](https://cdn.qwiklabs.com/kwtkEJ18%2FGOgDZs915lfQ4ZQvfnPbw8JkECN6egxmKg%3D)*
 
 **4. Click Add entry then enter the following:**
-*Entity: Public *
+*Entity: Public*
 
 *Name: allUsers*
 
@@ -55,7 +55,7 @@ Now that you have the file in your bucket, you're ready to create a Vision API r
 ## Create your Vision API request
 Now you'll create a request.json file in the Cloud Shell environment.
 
-**1. Using the Cloud Shell code editor (by clicking the pencil icon in the Cloud Shell ribbon). **
+**1. Using the Cloud Shell code editor (by clicking the pencil icon in the Cloud Shell ribbon).**
 *![edit1](https://cdn.qwiklabs.com/O1pSCpaSe6p5nxOMmjQg3Vsf0YwHaqW2bT56hM6Iym0%3D)*
 
 or your preferred command line editor (nano, vim, or emacs), create a request.json file.
@@ -91,11 +91,11 @@ The first Cloud Vision API feature you'll try out is label detection. This metho
 
 Call the Vision API with curl:
 
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
+**curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}**
 
 Your response should look something like the following:
 
-{
+**{
   "responses": [
     {
       "labelAnnotations": [
@@ -162,7 +162,7 @@ Your response should look something like the following:
       ]
     }
   ]
-}
+}**
 
 The API was able to identify the specific type of donuts these are, powdered sugar. Cool! For each label the Vision API found, it returns a:
 
@@ -204,7 +204,7 @@ To try out web detection, use the same image of beignets and change one line in 
 
 **2. To send it to the Vision API, use the same curl command as before (just press the up arrow in Cloud Shell):**
 
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
+**curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}**
 
 Dive into the response, starting with webEntities. Here are some of the entities this image returned:
 
@@ -304,7 +304,7 @@ To use this method, you'll upload a new image with faces to the Cloud Storage bu
 ## Calling the Vision API and parsing the response
 Now you're ready to call the Vision API using the same curl command you used above:
 
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
+**curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}**
 
 Take a look at the faceAnnotations object in the response. You'll notice the API returns an object for each face found in the image - in this case, three. Here's a clipped version of the response:
 
@@ -393,7 +393,7 @@ To use this method, you'll upload a new image with faces to the Cloud Storage bu
 ## Calling the Vision API and parsing the response
 Now you're ready to call the Vision API using the same curl command you used above:
 
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
+**curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}**
 
 Next, look at the landmarkAnnotations part of the response:
 
