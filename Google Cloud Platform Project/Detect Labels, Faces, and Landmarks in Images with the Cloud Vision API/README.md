@@ -1,6 +1,6 @@
 # Detect Labels, Faces, and Landmarks in Images with the Cloud Vision API
 
-## Create an API Key API
+## Create an API Key 
 Since you'll be using curl to send a request to the Vision API, you'll need to generate an API key to pass in your request URL.
 
 **1. To create an API key, navigate to APIs & services > Credentials in your Cloud console:**
