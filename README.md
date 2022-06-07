@@ -5,7 +5,7 @@ The libraries and tools used are _scikit-learn, Pandas, NumPy, Scipy, Seaborn, M
 
 Project run at [Google Collaboratory](https://colab.research.google.com/) , [IBM Watson Studio](https://dataplatform.cloud.ibm.com/) and [Google Cloud Platform](https://cloud.google.com/gcp).
 
-Below are some of my projects that I have made and practiced, you can see the results and descriptions of my projects:
+Below are some of the projects we have worked on, you can see my results and project descriptions:
 
 - [Detect Labels, Faces, and Landmarks in Images with the Cloud Vision API](https://github.com/Sardiirfan27/Data-ML-AI/tree/main/Google%20Cloud%20Platform%20Project/Detect%20Labels%2C%20Faces%2C%20and%20Landmarks%20in%20Images%20with%20the%20Cloud%20Vision%20API): The Cloud Vision API lets you understand the content of an image by encapsulating powerful machine learning models in a simple REST API. We will send images to the Vision API and see it detect objects, faces, and landmarks. This project using Google Cloud Platform.
 - [Exploratory Data Analysis on Employee Attrition Data](https://github.com/Sardiirfan27/Data-ML-AI/blob/main/Data/Project%202/EDA_for_ML.ipynb): For this project, I am using IBM HR Analytics Employee Attrition & Performance dataset that can be obtained on [kaggle](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset). This dataset is about employee attrition data. Employee Attrition is the gradual reduction in staff numbers that occurs as employees retire or resign and are not replaced. This is a fictional dataset created by IBM data scientists.
